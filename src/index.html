@@ -39,10 +39,10 @@
               la vez se enfrentan a desafíos, emociones y 
               relaciones humanas de la vida real.
               <br><br>
-            <strong>$109.990</strong>
+            <strong id="gameUno">$109.990</strong>
             </P>
           </article>
-          <button class='btn'>COMPRAR</button>
+          <button id='btnUno'>COMPRAR</button>
         </section>
         <section>
           <article>
@@ -52,10 +52,10 @@
             <h1>SUPER MARIO BROS. 3 </h1>
             <P>es el tercer videojuego de plataformas de la franquicia Mario para la consola Nintendo Entertainment System.
               <br><br>
-            <strong>$363.152</strong>
+            <strong id="gameDos">$363.152</strong>
             </P>
           </article>
-          <button class='btn'>COMPRAR</button>
+          <button id='btnDos'>COMPRAR</button>
         </section>
       </main>
       </div>
@@ -68,18 +68,20 @@
          <figure>
            <img src="./img/imgtarjetacredito.jpg" alt="imagen Tarjeta Credito">
          </figure>
-         <input type="text" placeholder="INGRESA EL NÚMERO DE LA TARJETA">
+         <input type="text" id='num' placeholder="INGRESA EL NÚMERO DE LA TARJETA">
          <br><br>
-         <input type="text" placeholder="NOMBRE Y APELLIDO"> 
+         <input type="text" id='name' placeholder="NOMBRE Y APELLIDO"> 
          <br><br>
-         <button>FINALIZAR COMPRA</button>
+         <div id='verify'></div>
+         <br></br>
+         <button id='finalcompra'>FINALIZAR COMPRA</button>
       </div>
       <div id="validacion" hidden>
          <br>
          <main>
            <h2>¡GRACIAS POR SU COMPRA!</h2>
          </main>
-         <p>HOLA ____ TU COMPRA FUE EXITOSA</p> 
+         <p>HOLA <span id="nombre"></span> TU COMPRA FUE EXITOSA</p> 
           <figure>
             <img src="./img/cheque.jpg" alt="imagen check">
           </figure>
@@ -87,13 +89,13 @@
             <strong>RESUMEN DE COMPRA</strong>
           </p>
           <P>
-            TU PAGO: $
+            TU PAGO: $<span id="mostrarPrecio"></span>
           </P>
           <P>
-            MEDIO DE PAGO: TARJETA DE CREDITO Nª
+            MEDIO DE PAGO: TARJETA DE CREDITO <span id='numCard'></span>
           </P>
           <BR></BR>
-          <button>IR A INICIO</button>
+          <button id='btnInicio'>IR A INICIO</button>
       </div>
     <script src="index.js" type="module"></script>
 </body>
