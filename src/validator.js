@@ -5,9 +5,9 @@ const validator = {
     let sumaImp = 0;
     let sumaPar = 0;
     //console.log(datos);
-    if(creditCardNumber === ""){
-      alert("Por favor ingrese el número de tarjeta")
-    }else{
+    /*if(creditCardNumber === ""){
+      document.getElementById("numTarj").innerHTML = "Este campo es obligatorio, Por favor ingrese el número de tarjeta"
+      alert("Por favor ingrese el número de tarjeta")*/
       for(let i=0; i<datos.length; i++ ) {
         if(i%2===1){
           let n=(datos[i]*2);
@@ -27,7 +27,6 @@ const validator = {
       console.log(result);
       console.log(result % 10 === 0 ? true : false);
       return result % 10 === 0 ? true : false;
-   }
   },
 
   maskify: (creditCardNumber) => {

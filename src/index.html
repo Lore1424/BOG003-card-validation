@@ -13,7 +13,7 @@
       </figure>
         <h1><strong>GAMESHOP</strong></h1>
     </header>
-      <div id="Bienvenida">
+      <div id='bienvenida'>
       <main>
         <section>
           <article>
@@ -39,7 +39,7 @@
               la vez se enfrentan a desafíos, emociones y 
               relaciones humanas de la vida real.
               <br><br>
-            <strong id="gameUno">$109.990</strong>
+            <strong>$109.990</strong>
             </P>
           </article>
           <button id='btnUno'>COMPRAR</button>
@@ -52,14 +52,14 @@
             <h1>SUPER MARIO BROS. 3 </h1>
             <P>es el tercer videojuego de plataformas de la franquicia Mario para la consola Nintendo Entertainment System.
               <br><br>
-            <strong id="gameDos">$363.152</strong>
+            <strong>$363.152</strong>
             </P>
           </article>
           <button id='btnDos'>COMPRAR</button>
         </section>
       </main>
       </div>
-      <div id="datos" hidden>
+      <div id='datos' hidden>
          <br>
          <main>
            <h3>¡PARA CONTINÚAR CON LA COMPRA, POR FAVOR, INGRESE LA INFORMACIÓN DE SU TARJETA DE CREDITO!</h3>
@@ -68,20 +68,27 @@
          <figure>
            <img src="./img/imgtarjetacredito.jpg" alt="imagen Tarjeta Credito">
          </figure>
-         <input type="text" id='num' placeholder="INGRESA EL NÚMERO DE LA TARJETA">
+         <input type="text" id='num' placeholder="INGRESA EL NÚMERO DE LA TARJETA"> <span id='cantTarj'></span>
          <br><br>
+         <span id='numTarj'></span>
+         <br>
+         <br>
          <input type="text" id='name' placeholder="NOMBRE Y APELLIDO"> 
+         <br>
+         <br>
+         <span id='nameOblig'></span>
+         <br><br>
          <br><br>
          <div id='verify'></div>
          <br></br>
-         <button id='finalcompra'>FINALIZAR COMPRA</button>
+         <button id='finalCompra'>FINALIZAR COMPRA</button>
       </div>
-      <div id="validacion" hidden>
+      <div id='validacion' hidden>
          <br>
          <main>
            <h2>¡GRACIAS POR SU COMPRA!</h2>
          </main>
-         <p>HOLA <span id="nombre"></span> TU COMPRA FUE EXITOSA</p> 
+         <p>HOLA <span id='nombre'></span> TU COMPRA FUE EXITOSA</p> 
           <figure>
             <img src="./img/cheque.jpg" alt="imagen check">
           </figure>
@@ -89,10 +96,10 @@
             <strong>RESUMEN DE COMPRA</strong>
           </p>
           <P>
-            TU PAGO: $<span id="mostrarPrecio"></span>
+            TU PAGO: $<span id='mostrarPrecio'></span>
           </P>
           <P>
-            MEDIO DE PAGO: TARJETA DE CREDITO <span id='numCard'></span>
+            MEDIO DE PAGO: TARJETA DE CREDITO Nª <span id='numCard'></span>
           </P>
           <BR></BR>
           <button id='btnInicio'>IR A INICIO</button>
