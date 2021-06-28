@@ -1,0 +1,35 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+.logotipo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+}
+.title{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: darkred;
+}
+.juegoUno{
+    width: 300px;
+    height: 180px;
+}
+.juegoDos{
+    width: 300px;
+    height: 180px;
+}
+.juegoTres{
+    width: 180px;
+    height: 180px;
+}
+.seccionUno{
+    display: flex;
+}
