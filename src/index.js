@@ -1,15 +1,14 @@
 import validator from './validator.js';
 
-console.log(validator);
 
-document.getElementById('btnUno').addEventListener('click', e => {
+document.getElementById('btnUno').addEventListener('click', () => {
   document.getElementById('bienvenida').setAttribute('hidden', '');
   document.getElementById('datos').removeAttribute('hidden');
   document.getElementById('mostrarPrecio').innerHTML = '109.900';
 
 })
 
-document.getElementById('btnDos').addEventListener('click', e => {
+document.getElementById('btnDos').addEventListener('click', () => {
   document.getElementById('bienvenida').setAttribute('hidden', '');
   document.getElementById('datos').removeAttribute('hidden');
   document.getElementById('mostrarPrecio').innerHTML = '363.152';
@@ -49,7 +48,7 @@ document.getElementById('finalCompra').addEventListener('click', () => {
 
 function datoTarjetaValido(creditCardNumber) {
   if (creditCardNumber === "") {
-    document.getElementById('numTarj').innerHTML = "Este campo es obligatorio, por favor digitar su número de tarjeta ";
+    document.getElementById('numTarj').innerHTML = "Este campo es obligatorio";
     return true;
   } else {
     return false;
@@ -58,7 +57,7 @@ function datoTarjetaValido(creditCardNumber) {
 
 function cantidadValida(creditCardNumber) {
   if (creditCardNumber.length != 15) {
-    document.getElementById('cantTarj').innerHTML = "Este campo requiere 16 dígitos, por favor validar el número ingresado"
+    document.getElementById('cantTarj').innerHTML = "Este campo requiere 16 dígitos"
     return true;
   } else {
     return false;
@@ -66,7 +65,7 @@ function cantidadValida(creditCardNumber) {
 
   function validaDatoName(datoName) {
     if (datoName === "") {
-      document.getElementById('nameOblig').innerHTML = "Este campo es obligatorio, por favor digitar su nombre y apellido"
+      document.getElementById('nameOblig').innerHTML = "Este campo es obligatorio"
       return true;
     } else {
       return false;
@@ -80,7 +79,7 @@ function cantidadValida(creditCardNumber) {
       document.getElementById('validacion').removeAttribute('hidden');
       return true
     } else {
-      document.getElementById('verify').innerHTML = 'Tu tarjeta no es valida, por favor verifica el número ingresado.';
+      document.getElementById('verify').innerHTML = 'Tu tarjeta no es valida';
     }
   }
 

@@ -1,36 +1,36 @@
-<!DOCTYPE html>
+<!DOCTYpE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>GAMESHOP</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="./img/logo1.ico" type="image/png">
-  </head>
-  <body>
-    <header class="logotipo">
-      <div>
+
+<head>
+  <meta charset="utf-8">
+  <title>GAMESHOP</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="./img/logo1.ico" type="image/png">
+</head>
+
+<body>
+  <header class="logotipo">
+    <div>
       <figure>
         <img class="logo" src="./img/logo.png" alt="logo">
       </figure>
-      </div>
+    </div>
+    <div>
+      <h1 class="title"><strong>GAMESHOP</strong></h1>
+    </div>
+  </header>
+  <div id="bienvenida">
+    <main class="seccionUno">
       <div>
-        <h1 class='title'><strong>GAMESHOP</strong></h1>
-      </div>
-    </header>
-      <div id='bienvenida'>
-      <main class='seccionUno'>
-        <div>
         <section>
           <article>
             <figure>
-              <img class='juegoUno' src="./img/age-of-empires.jpg" alt="">
+              <img class="juegoUno" src="./img/age-of-empires.jpg" alt="">
             </figure>
             <h1>AGE OF EMPIRES IV</h1>
-            <P>Videojuego de estrategia en tiempo real 
-              desarrollado por Relic Entertainment.
-            <br><br>
-            <strong>PROXIMAMENTE</strong>
-            </P>
+            <p>Videojuego de estrategia en tiempo real desarrollado por Relic Entertainment.
+            <p class="prox">PROXIMAMENTE</p>
+            </p>
           </article>
         </section>
       </div>
@@ -38,82 +38,89 @@
         <section>
           <article>
             <figure>
-              <img class='juegoDos' src="./img/life-is-strange.jpg" alt="">
+              <img class="juegoDos" src="./img/life-is-strange.jpg" alt="">
             </figure>
             <h1>LIFE IS STRANGE TRUE COLORS</h1>
-            <P>Descubre un universo en el que personas normales 
-              y corrientes lidian con poderes sobrenaturales y a 
-              la vez se enfrentan a desafíos, emociones y 
+            <p>Descubre un universo en el que personas normales
+              y corrientes lidian con poderes sobrenaturales y a
+              la vez se enfrentan a desafíos, emociones y
               relaciones humanas de la vida real.
-              <br><br>
-            <strong>$109.990</strong>
-            </P>
+            <p class="precio">$109.990</p>
+            </p>
           </article>
-          <button id='btnUno'>COMPRAR</button>
+          <button id="btnUno">COMPRAR</button>
         </section>
       </div>
       <div>
         <section>
           <article>
             <figure>
-              <img class='juegoTres' src="./img/super-mario-3d.jpg" alt="">
+              <img class="juegoTres" src="./img/super-mario-3d.jpg" alt="">
             </figure>
             <h1>SUPER MARIO BROS. 3 </h1>
-            <P>Es el tercer videojuego de plataformas de la franquicia Mario para la consola Nintendo Entertainment System.
-              <br><br>
-            <strong>$363.152</strong>
-            </P>
+            <p>Es el tercer videojuego de plataformas de la franquicia Mario para la consola Nintendo Entertainment
+              System.
+            <p class="precio">$363.152</p>
+            </p>
           </article>
-          <button id='btnDos'>COMPRAR</button>
+          <button id="btnDos">COMPRAR</button>
         </section>
       </div>
-      </main>
+    </main>
+  </div>
+  <div id="datos" hidden>
+    <br>
+    <div>
+      <h3>¡PARA CONTINÚAR CON LA COMPRA, POR FAVOR, INGRESE LA INFORMACIÓN DE SU TARJETA DE CREDITO!</h3>
+    </div>
+    <main class="seccionDos">
+      <figure>
+        <img class="card" src="./img/tarjeta-de-credito.png" alt="imagen Tarjeta Credito">
+      </figure>
+      <div class="form">
+        <input type="text" id="num" placeholder="INGRESA EL NÚMERO DE LA TARJETA">
+        <br />
+        <span id="numTarj"></span>
+        <br>
+        <span id="cantTarj"></span>
+        <br>
+        <input class="numeroTarjeta" type="text" id="name" placeholder="NOMBRE Y APELLIDO">
+        <br>
+        <span id="nameOblig"></span>
+        <br><br>
+        <br><br>
+        <div id="verify"></div>
+        <br />
+        <button id="finalCompra">FINALIZAR</button>
       </div>
-      <div id='datos' hidden>
-         <br>
-         <main>
-           <h3>¡PARA CONTINÚAR CON LA COMPRA, POR FAVOR, INGRESE LA INFORMACIÓN DE SU TARJETA DE CREDITO!</h3>
-         </main>
-         <br><br>
-         <figure>
-           <img src="./img/tarjeta-de-credito.png" alt="imagen Tarjeta Credito">
-         </figure>
-         <input type="text" id='num' placeholder="INGRESA EL NÚMERO DE LA TARJETA"> <span id='cantTarj'></span>
-         <br><br>
-         <span id='numTarj'></span>
-         <br>
-         <br>
-         <input type="text" id='name' placeholder="NOMBRE Y APELLIDO"> 
-         <br>
-         <br>
-         <span id='nameOblig'></span>
-         <br><br>
-         <br><br>
-         <div id='verify'></div>
-         <br></br>
-         <button id='finalCompra'>FINALIZAR COMPRA</button>
+    </main>
+  </div>
+  <div id="validacion" hidden>
+    <br>
+    <h2>¡GRACIAS POR SU COMPRA!</h2>
+    <main class="seccionTres">
+      <div class="titleCheck">
+        <p class="pName">HOLA <span id="nombre"></span> TU TRANSACCIÓN FUE EXITOSA</p>
+        <figure>
+          <img class="imgCheck" src="./img/cheque.png" alt="imagen check">
+        </figure>
       </div>
-      <div id='validacion' hidden>
-         <br>
-         <main>
-           <h2>¡GRACIAS POR SU COMPRA!</h2>
-         </main>
-         <p>HOLA <span id='nombre'></span> TU COMPRA FUE EXITOSA</p> 
-          <figure>
-            <img src="./img/cheque.jpg" alt="imagen check">
-          </figure>
-          <p>
-            <strong>RESUMEN DE COMPRA</strong>
-          </p>
-          <P>
-            TU PAGO: $<span id='mostrarPrecio'></span>
-          </P>
-          <P>
-            MEDIO DE PAGO: TARJETA DE CREDITO Nª <span id='numCard'></span>
-          </P>
-          <BR></BR>
-          <button id='btnInicio'>IR A INICIO</button>
+      <div class="resumen">
+        <p>
+          <strong>RESUMEN DE COMPRA</strong>
+        </p>
+        <p>
+          TU PAGO: $<span id="mostrarPrecio"></span>
+        </p>
+        <p>
+          MEDIO DE PAGO: TARJETA DE CREDITO Nª <span id="numCard"></span>
+        </p>
+        <br />
+        <button id="btnInicio">INICIO</button>
       </div>
-    <script src="index.js" type="module"></script>
+    </main>
+  </div>
+  <script src="index.js" type="module"></script>
 </body>
+
 </html>
