@@ -2,14 +2,14 @@ import validator from './validator.js';
 
 console.log(validator);
 
-document.getElementById('btnUno').addEventListener('click', e => {
-  document.getElementById('bienvenida').setAttribute('hidden', '');
-  document.getElementById('datos').removeAttribute('hidden');
+document.getElementById('btnUno').addEventListener('click', () => {
+   document.getElementById('bienvenida').setAttribute('hidden', '');
+   document.getElementById('datos').removeAttribute('hidden');
   document.getElementById('mostrarPrecio').innerHTML = '109.900';
 
 })
 
-document.getElementById('btnDos').addEventListener('click', e => {
+document.getElementById('btnDos').addEventListener('click', () => {
   document.getElementById('bienvenida').setAttribute('hidden', '');
   document.getElementById('datos').removeAttribute('hidden');
   document.getElementById('mostrarPrecio').innerHTML = '363.152';
