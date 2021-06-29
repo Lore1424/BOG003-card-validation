@@ -14,7 +14,7 @@ Lo primero que se realizó fue un prototipo de baja fidelidad a lápiz, en donde
 
 En esta pantalla se visualizan los videoJuegos que se tienen para la venta y aquellos que estan por ellegar.
 
-<img src="./img/Pantalla_1.png" alt="Pantalla_1">
+<img src="https://github.com/LorraineGelis/BOG003-card-validation/blob/master/src/img/Pantalla_1.png" alt="Pantalla_1">
 
 
 
