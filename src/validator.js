@@ -1,4 +1,5 @@
 const validator = {
+  //Esta función se encarga de validar el número de la tarjeta, utilizando el algoritmo de luhn
 
    isValid: (creditCardNumber) => {
     let datos = (creditCardNumber.split("").reverse())
@@ -18,7 +19,7 @@ const validator = {
       let result=(sumaPar+sumaImp);
       return result % 10 === 0 ? true : false;
   },
-
+//Esta función se encarga de enmascarar los ultimos 4 dígitos de la tarjeta
   maskify: (creditCardNumber) => {
       let maskiNum = creditCardNumber.length;
       let output = "";

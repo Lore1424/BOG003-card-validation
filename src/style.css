@@ -1,3 +1,4 @@
+/*Desde aqui se encuentran los estilos para el fondo y logotipo*/
 body{
     background-color: black;
     color: white;
@@ -18,6 +19,9 @@ body{
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: darkred;
 }
+
+/*Desde aqui se encuentran los estilos de alto y ancho en cuanto a las imagenes de la primera pantalla*/
+
 .juegoUno{
     width: 300px;
     height: 180px;
@@ -30,55 +34,25 @@ body{
     width: 180px;
     height: 180px;
 }
-.seccionUno{
-    display: flex;
-    justify-content: space-evenly;
-}
-.seccionUno > div{
-    flex: 0 0 1px;
-}
-h1{
-    text-align: center;
-}
-h3{
-    text-align: center;
-    margin-bottom: 60px;
-}
-h2{
-    text-align: center;
-    margin-bottom: 60px;
-}
-.prox{
-    font-size: 16pt;
-    font-weight: bolder;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: darkred;
-}
-p{
-    margin-bottom: 20px;
-}
-.precio{
-    margin-top: 20px;
-    font-weight: bold;
-}
-button{
-    background-color: darkred;
-    border: 1px solid black;
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 14pt;
-    width: 120px;
-    height: 25px;
-    text-align: center;
-    text-shadow: 2px 2px 3px rgb(0 0 0);
-}
-button:hover{
-    border: 2px solid rgb(22, 168, 253);
-}
 .card{
     width: 320px;
     height: 320px;
 }
+.imgCheck{
+    width: 40px;
+    height: 40px;
+}
+
+/*Desde aqui se encuentran los estilos de las secciones, en donde utilizamos la herramienta flex*/
+.seccionUno{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.seccionUno > div{
+    flex: 0 0 1px;
+}
+
 .seccionDos{
     display: flex;
     flex-direction: row-reverse;
@@ -94,10 +68,6 @@ input{
 }
 .numeroTarjeta{
     margin-top: 60px;
-}
-.imgCheck{
-    width: 40px;
-    height: 40px;
 }
 .titleCheck{
     display: flex;
@@ -119,3 +89,48 @@ input{
     margin-left: 60px;
     margin-top: 30px;
 }
+
+/*Desde aqui se encuentran los estilos en cuanto a los titulos de nuestra APP*/
+
+h1{
+    text-align: center;
+}
+h3{
+    text-align: center;
+    margin-bottom: 60px;
+}
+h2{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.prox{
+    font-size: 16pt;
+    font-weight: bolder;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: darkred;
+}
+
+p{
+    margin-bottom: 20px;
+}
+.precio{
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/*Desde aqui se encuentran los estilos en cuanto a los botones*/
+button{
+    background-color: darkred;
+    border: 1px solid black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14pt;
+    width: 120px;
+    height: 25px;
+    text-align: center;
+    text-shadow: 2px 2px 3px rgb(0 0 0);
+}
+button:hover{
+    border: 2px solid rgb(22, 168, 253);
+}
+
