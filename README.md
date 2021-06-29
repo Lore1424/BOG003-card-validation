@@ -26,11 +26,11 @@ En esta pantalla se encuentra el formulario en donde se ingresa el número de ta
 
 Tambien se puede observar que los campos son obligatorios, y el usuario debe digitarlos debidamente para que la compra sea exitosa.
 
-<img src="./img/Pantalla_2._1.png" alt="Pantalla_2_1">
+<img src="https://github.com/LorraineGelis/BOG003-card-validation/blob/master/src/img/Pantalla_2._1.png">
 
 
 ## Pantalla 3
 
 En esta pantalla se recibe el resumen de la compra con el nombre del usuario, el precio de producto adquirido y su número de tarjeta oculto, excepto los últimos cuatro dígitos.
 
-<img src="./img/Pantalla_3.png" alt="Pantalla_3">
+<img src="https://github.com/LorraineGelis/BOG003-card-validation/blob/master/src/img/Pantalla_3.png">
