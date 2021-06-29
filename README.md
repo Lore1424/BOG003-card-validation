@@ -8,11 +8,11 @@ El público objetivo son personas de 20 años en adelante, amantes de los videoj
 
 ## 1. Prototipo.
 
-Lo primero que se realizó fue un prototipo de baja fidelidad a lápiz, en donde buscabamos hacer algo facil de leer visualmente, con botones que guien, sin mucho texto. Luego lo pasamos a FIGMA en donde agreguamos otras funcionalidades que nos dieron a través de Feedback con compañeras y coach.
+Lo primero que se realizó fue un prototipo de baja fidelidad a lápiz, en donde buscabamos hacer algo facil de leer visualmente, con botones que guien, sin mucho texto. Luego lo pasamos a FIGMA en donde agregamos otras funcionalidades que nos dieron a través de Feedback con compañeras y coach.
 
 ## Pantalla 1
 
-En esta pantalla se visualizan los videoJuegos que se tienen para la venta y aquellos que estan por ellegar.
+En esta pantalla se visualizan los videoJuegos que se tienen para la venta y aquellos que estan por llegar.
 
 <img src="https://github.com/LorraineGelis/BOG003-card-validation/blob/master/src/img/Pantalla_1.png" alt="Pantalla_1">
 
